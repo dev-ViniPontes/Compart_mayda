@@ -9,8 +9,15 @@ CORS(app)
 # Conexão com banco de dados
 def connection():
     try:
+        #conn = psycopg2.connect(
+        #    host="dpg-d03pjjali9vc73ftp4pg-a.oregon-postgres.render.com",
+        #    port=5432,
+        #    database="postgresql_maydaqueiroz",
+        #    user="postgresql_maydaqueiroz_user",
+        #    password="rEkCawpETemawycDK1ml5Sn5ShRAMPxc"
+        #)
         conn = psycopg2.connect(
-            host="dpg-d03pjjali9vc73ftp4pg-a.oregon-postgres.render.com",
+            host="localhost",
             port=5432,
             database="postgresql_maydaqueiroz",
             user="postgresql_maydaqueiroz_user",
