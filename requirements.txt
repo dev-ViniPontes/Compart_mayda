@@ -1,0 +1,7 @@
+Flask
+Flask-Migrate
+Flask-RESTful
+Flask-Cors
+python-dotenv
+gunicorn
+psycopg2
