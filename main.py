@@ -17,11 +17,11 @@ def connection():
         #    password="rEkCawpETemawycDK1ml5Sn5ShRAMPxc"
         #)
         conn = psycopg2.connect(
-            host="localhost",
+            host="http://31.97.17.69/",
             port=5432,
             database="postgresql_maydaqueiroz",
-            user="postgresql_maydaqueiroz_user",
-            password="rEkCawpETemawycDK1ml5Sn5ShRAMPxc"
+            user="postgres",
+            password="hcac10"
         )
         print("Conectado com sucesso ao PostgreSQL!")
         return conn
@@ -788,5 +788,5 @@ def get_website():
 
 if __name__ == "__main__":
     create_table()
-    app.run(debug=True, port=5000, host="0.0.0.0")
+    app.run(debug=True, port=5000, host="127.0.0.1")
 
