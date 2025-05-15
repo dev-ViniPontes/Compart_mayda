@@ -103,7 +103,7 @@ def Login():
 
     key = request.json.get("key")
 
-    if key == "netd3zztk1heyly2g4tr" or key == "hcac10":
+    if key == "Beajulia@0818" or key == "netd3zztk1heyly2g4tr":
         return jsonify({"message": "Success"}), 200
     else:
         return jsonify({"message": "Chave incorreta"}), 400
