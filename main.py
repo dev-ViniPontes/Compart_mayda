@@ -9,20 +9,20 @@ CORS(app)
 # Conexão com banco de dados
 def connection():
     try:
-        conn = psycopg2.connect(
-            host="dpg-d03pjjali9vc73ftp4pg-a.oregon-postgres.render.com",
-            port=5432,
-            database="postgresql_maydaqueiroz",
-            user="postgresql_maydaqueiroz_user",
-            password="rEkCawpETemawycDK1ml5Sn5ShRAMPxc"
-        )
         #conn = psycopg2.connect(
-        #    host="http://31.97.17.69/",
+        #    host="dpg-d03pjjali9vc73ftp4pg-a.oregon-postgres.render.com",
         #    port=5432,
         #    database="postgresql_maydaqueiroz",
-        #    user="postgres",
-        #    password="hcac10"
+        #    user="postgresql_maydaqueiroz_user",
+        #    password="rEkCawpETemawycDK1ml5Sn5ShRAMPxc"
         #)
+        conn = psycopg2.connect(
+            host="31.97.17.69",
+            port=5432,
+            database="postgresql_maydaqueiroz",
+            user="postgres",
+            password="hcac10"
+        )
         print("Conectado com sucesso ao PostgreSQL!")
         return conn
     except Exception as e:
